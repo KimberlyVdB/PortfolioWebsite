@@ -8,7 +8,7 @@
 body {
     @include background;
     background: $primary-color;
-    color: #B5EECB;
+    color: $third-color;
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,10 +62,11 @@ main {
         margin-top: 1rem;
 
         a {
+            // color: $secondary-color;
             padding: 0.5rem;
 
             &:hover {
-                color: #B5EECB;
+                color: $third-color;
                 @include easeOut();
             }
         }
