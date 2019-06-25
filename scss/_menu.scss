@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: white;
+        background: $secondary-color;
         @include easeOut;
     } 
 
@@ -23,6 +23,7 @@
           .btn-line {
             &:nth-child(1) {
               transform: rotate(45deg) translate(5px, 5px);
+              background-color: $secondary-color;
             }
 
             &:nth-child(2) {
@@ -31,8 +32,100 @@
 
             &:nth-child(3) {
                   transform: rotate(-45deg) translate(7px, -6px);
+                  background-color: $secondary-color;
             }
-            
           }
       }
   }
+
+  //menu overlay
+
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+
+    &.show{
+      visibility: visible;
+    }
+
+    &-branding, 
+    &-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    &-nav {
+      margin: 0;
+      padding: 0;
+      background: darken($primary-color, 5);
+      transform: translate3d(0, -100%, 0);
+      list-style: none;
+      @include easeOut;
+      background: rgba(darken($primary-color, 5), 0.9);
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &-branding {
+      background: $primary-color;
+      background: rgba(lighten($secondary-color, 5), 0.5);
+      transform: translate3d(0, 100%, 0);
+      @include easeOut;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+       .portrait {
+         width: 250px;
+         height: 280px;
+         background: url('../img/spritsheet.png');
+         background-color: white opacity 0.06;
+         border-radius: 20%;
+       }
+    }
+    .nav-item {
+      transform:  translate3d(600px, 0, 0);
+      @include easeOut;
+        
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+
+      &.current > a {
+        color: $third-color;
+        border-left: solid $secondary-color;
+        }
+    }
+
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem;
+      font-weight: 300;
+      @include easeOut;
+
+      &:hover {
+        background: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+
+// Delay each nav item slide with for loop
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+} 
