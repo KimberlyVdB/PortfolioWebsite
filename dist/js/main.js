@@ -35,3 +35,27 @@ function toggleMenu() {
     }
 }
 
+tID; //used to clear interval!
+
+function stopAnimate() {
+    clearInterval(tID);
+}
+
+function animateScript() {
+    let position = 256;
+    const interval = 100;
+    const diff = 256;
+
+    tID = setInterval(() => {
+
+        document.getElementById("image").style.backgroundPosition =
+            `-${position}px 0px`;
+        if (position < 800) {
+            position = position + diff;
+        }
+        else {
+            position = 256;
+        }
+
+    }, interval);
+}
