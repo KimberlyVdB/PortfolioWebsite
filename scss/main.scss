@@ -56,7 +56,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 55px);
 
     .icons {
         margin-top: 1rem;
@@ -78,4 +78,52 @@ main {
             margin-top: 20vh;
         }
     }
+}
+
+//about
+
+.about-info {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-auto-columns: repeat (3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 60px;
+        border-color: $primary-color;
+        border: solid;
+    }
+    
+    .bio {
+        grid-area: bio;
+    }
+    
+    .job-1 {
+        grid-area: job1;
+    }
+    .job-2 {
+        grid-area: job2;
+    }
+    .job-3 {
+        grid-area: job3;
+    }
+    
+    .job {
+        background: lighten($primary-color, 5);
+        padding: rem;
+        border-bottom: $secondary-color 5px dashed;
+    }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: lighten($secondary-color, 2);
+  color: $primary-color;
+  height: 55px;
+  font-weight: 500;
 }
