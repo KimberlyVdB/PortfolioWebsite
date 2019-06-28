@@ -4,7 +4,7 @@ $secondary-color:#F8A2A8;
 $third-color: #B5EECB;
 $show-home-image: true;
 $home-image: url("../img/backgroundimg.jpg");
-$background-opacity: 0.6;
+$background-opacity: 0.8;
 
 @mixin  easeOut {
     transition: all 0.5s ease-out;
