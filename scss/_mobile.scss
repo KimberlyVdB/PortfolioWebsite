@@ -47,6 +47,21 @@
       background: url('../img/spritsheetSMALL.png');
     }
   }
+
+  .about-info {
+    grid-template-areas:
+    'bioimge'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+
+    grid-template-columns: 2fr;
+
+    .job {
+      width: 200px;
+    }
+  }
 }
 
 //smartphone
