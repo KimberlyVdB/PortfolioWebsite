@@ -14,48 +14,51 @@ menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
 
-    if (!showMenu) {
-        menuBtn.classList.add('close');
-        menu.classList.add('show');
-        menuNav.classList.add('show');
-        menuBranding.classList.add('show');
-        navItems.forEach(item => item.classList.add('show'));
+  if (!showMenu) {
+    menuBtn.classList.add('close');
+    menu.classList.add('show');
+    menuNav.classList.add('show');
+    menuBranding.classList.add('show');
+    navItems.forEach(item => item.classList.add('show'));
 
-        //set menu state 
-        showMenu = true;
+    //set menu state 
+    showMenu = true;
 
-    } else {
-        menuBtn.classList.remove('close');
-        menu.classList.remove('show');
-        menuNav.classList.remove('show');
-        menuBranding.classList.remove('show');
-        navItems.forEach(item => item.classList.remove('show'));
+  } else {
+    menuBtn.classList.remove('close');
+    menu.classList.remove('show');
+    menuNav.classList.remove('show');
+    menuBranding.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
 
-        showMenu = false;
-    }
+    showMenu = false;
+  }
 }
 
-tID; //used to clear interval!
+let tID; //used to clear interval!
 
 function stopAnimate() {
-    clearInterval(tID);
+  clearInterval(tID);
 }
 
 function animateScript() {
-    let position = 256;
-    const interval = 100;
-    const diff = 256;
+  let position = 256;
+  const interval = 100;
+  const diff = 256;
 
-    tID = setInterval(() => {
+  tID = setInterval(() => {
 
-        document.getElementById("image").style.backgroundPosition =
-            `-${position}px 0px`;
-        if (position < 800) {
-            position = position + diff;
-        }
-        else {
-            position = 256;
-        }
+    document.getElementById("image").style.backgroundPosition =
+      `-${position}px 0px`;
+    if (position < 800) {
+      position = position + diff;
+    }
+    else {
+      position = 256;
+    }
+    // if (window.matchMedia('(min-width: 700px)').matches) {
+    //   stop.animateScript;
+    // }
 
-    }, interval);
+  }, interval);
 }
