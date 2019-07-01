@@ -118,16 +118,68 @@ main {
     
     .job {
         background: lighten($primary-color, 5);
-        padding: rem;
+        padding: 0.3rem;
         border-bottom: $secondary-color 8px solid;
+        border-radius: 0px 0px 40px 10px;
 
         p {
-          margin: 0px 25px 20px 20px;
+          margin: 0 25px 15px 25px;
         }
-        h5 {
+        
+        h5 {  
           margin: 10px 25px 10px 20px;
         }
     }
+}
+
+// PROJECTS
+
+.projects {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 5px solid $secondary-color;
+
+    &:hover {
+        opacity: 0.3;
+        @include easeOut;
+    }
+  }
+}
+
+//Button Styles
+
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+}
+
+.btn-dark {
+  @extend .btn;   
+  background: $secondary-color;
+  color: $primary-color;
+
+  &:hover {
+    background: $third-color;
+    color: $primary-color;
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: $primary-color;
+  color: $third-color;
+
+  &:hover {
+    background: darken($third-color, 10);
+    color: $primary-color;
+}
 }
 
 #main-footer {
