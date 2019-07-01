@@ -16,32 +16,33 @@
 
 //tablet/small laptop
 @include mediaMd {
-    main {
-        align-items: center;
-        text-align: center;
+  main {
+    align-items: center;
+    text-align: center;
         
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 3rem; 
+      }
     }
 
     ul.menu-nav,
     div.menu-branding {
-        float: none;
-        width:  100%;
-        min-height: 0;
+      float: none;
+      width:  100%;
+      min-height: 0;
 
-        &.show {
-            transform: translate3d(0,0,0)
-        }
+      &.show {
+        transform: translate3d(0,0,0)
+      }
     }
 
     .menu-nav {
-        height:  75vh;
-        transform: translate3d(-100%,0,0);
-        font-size: 24px;
-  }
+      height:  75vh;
+      transform: translate3d(-100%,0,0);
+      font-size: 24px;
+    }
 
   .menu-branding {
     height: 25vh;
@@ -61,9 +62,12 @@
     'job3';
 
     grid-template-columns: 2fr;
+    grid-template-rows: 200px;
+    justify-items: center;
 
     .job {
       width: 200px;
+
     }
   }
   .projects {
