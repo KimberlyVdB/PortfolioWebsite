@@ -2,12 +2,16 @@
 
 //widescreens
 @include mediaXl {
-
+  .projects {
+    grid-template-columns: repeat(4, 1fr)
+  }
 }
 
 //ddesktop/laptop
 @include mediaLg {
-
+  .projects {
+    grid-template-columns: repeat(3, 1fr)
+  }
 }
 
 //tablet/small laptop
@@ -50,7 +54,7 @@
 
   .about-info {
     grid-template-areas:
-    'bioimge'
+    'bioimage'
     'bio'
     'job1'
     'job2'
@@ -62,6 +66,9 @@
       width: 200px;
     }
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr)
+  }
 }
 
 //smartphone
@@ -69,6 +76,9 @@
     main#home h1 {
         margin-top: 10vh;
         font-size: 1.8rem;
+    }
+    .projects {
+      grid-template-columns: 1fr
     }
 }
 
