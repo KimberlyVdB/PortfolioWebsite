@@ -164,6 +164,7 @@ main {
   @extend .btn;   
   background: $secondary-color;
   color: $primary-color;
+  border-radius: 0 0 20px 0;
 
   &:hover {
     background: $third-color;
