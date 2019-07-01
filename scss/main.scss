@@ -208,6 +208,7 @@ main {
   &:hover {
     background: $third-color;
     color: $primary-color;
+    border-bottom: 3px $primary-color solid;
   }
 }
 
@@ -215,10 +216,12 @@ main {
   @extend .btn;
   background: $primary-color;
   color: $third-color;
+  border-radius: 20px 0 0 0;
 
   &:hover {
     background: darken($third-color, 10);
     color: $primary-color;
+    border-top: 3px $primary-color solid; 
 }
 }
 

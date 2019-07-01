@@ -241,14 +241,17 @@ main {
   border-radius: 0 0 20px 0; }
   .btn-dark:hover {
     background: #B5EECB;
-    color: #475250; }
+    color: #475250;
+    border-bottom: 3px #475250 solid; }
 
 .btn-light {
   background: #475250;
-  color: #B5EECB; }
+  color: #B5EECB;
+  border-radius: 20px 0 0 0; }
   .btn-light:hover {
     background: #8ce4ae;
-    color: #475250; }
+    color: #475250;
+    border-top: 3px #475250 solid; }
 
 #main-footer {
   text-align: center;
