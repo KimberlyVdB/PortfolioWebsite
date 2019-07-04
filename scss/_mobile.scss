@@ -62,13 +62,8 @@
     'job3';
 
     grid-template-columns: 2fr;
-    grid-template-rows: 200px;
     justify-items: center;
 
-    .job {
-      width: 200px;
-
-    }
   }
   .projects {
     grid-template-columns: repeat(2, 1fr)
