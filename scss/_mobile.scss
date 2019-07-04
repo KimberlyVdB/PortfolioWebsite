@@ -16,6 +16,11 @@
 
 //tablet/small laptop
 @include mediaMd {
+
+  .no-bg-img {
+    background: none; 
+  }
+
   main {
     align-items: center;
     text-align: center;
