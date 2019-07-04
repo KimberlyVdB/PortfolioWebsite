@@ -116,7 +116,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(71, 82, 80, 0.8); }
+      background: rgba(71, 82, 80, 0.6); }
 
 h1, h2, h3 {
   margin: 0;
@@ -174,7 +174,7 @@ main {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      border-bottom: 8px #F8A2A8 solid;
+      border: 8px #F8A2A8 solid;
       padding: 1rem 0 1rem 0; }
   .about-info .jobTitles {
     background-color: #F8A2A8;
@@ -275,7 +275,8 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 3rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -295,9 +296,8 @@ main {
       background: url("../img/spritsheetSMALL.png"); }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 2fr; }
-    .about-info .job {
-      width: 200px; }
+    grid-template-columns: 2fr;
+    justify-items: center; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
