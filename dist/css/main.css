@@ -174,30 +174,35 @@ main {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      border: 8px #F8A2A8 solid;
+      border-bottom: 8px #F8A2A8 solid;
       border-radius: 0 0 40px 10px;
       padding: 1rem 0 1rem 0; }
-  .about-info .jobTitles {
-    background-color: #F8A2A8;
-    color: #475250;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: 5px #F8A2A8 solid; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #53605d;
-    padding: 0.3rem;
-    border-bottom: #F8A2A8 8px solid;
-    border-radius: 0px 0px 40px 10px; }
-    .about-info .job p {
-      margin: 0 25px 15px 25px; }
-    .about-info .job h5 {
-      margin: 10px 25px 10px 20px; }
+
+.jobTitles {
+  background-color: #F8A2A8;
+  color: #475250;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 5px #F8A2A8 solid; }
+
+.job-1 {
+  grid-area: job1; }
+
+.job-2 {
+  grid-area: job2; }
+
+.job-3 {
+  grid-area: job3; }
+
+.job {
+  background: #53605d;
+  padding: 0.3rem;
+  border-bottom: #F8A2A8 8px solid;
+  border-radius: 0px 0px 40px 10px; }
+  .job p {
+    margin: 0 25px 15px 25px; }
+  .job h5 {
+    margin: 10px 25px 10px 20px; }
 
 .projects {
   margin-top: 20px;
@@ -239,6 +244,7 @@ main {
 .btn-dark {
   background: #F8A2A8;
   color: #475250;
+  border-bottom: 3px #475250 solid;
   border-radius: 0 0 20px 0; }
   .btn-dark:hover {
     background: #B5EECB;
@@ -248,6 +254,7 @@ main {
 .btn-light {
   background: #475250;
   color: #B5EECB;
+  border-top: 3px #F8A2A8 solid;
   border-radius: 20px 0 0 0; }
   .btn-light:hover {
     background: #8ce4ae;
@@ -271,8 +278,6 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  .no-bg-img {
-    background: none; }
   main {
     align-items: center;
     text-align: center; }
