@@ -160,7 +160,7 @@ main {
     border: 5px solid $secondary-color;
 
     &:hover {
-      opacity: 0.3;
+      opacity: 0.6;
       @include easeOut;
     }
   }

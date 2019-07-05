@@ -213,7 +213,7 @@ main {
     width: 100%;
     border: 5px solid #F8A2A8; }
     .projects img:hover {
-      opacity: 0.3;
+      opacity: 0.6;
       transition: all 0.5s ease-out; }
 
 .boxes {
