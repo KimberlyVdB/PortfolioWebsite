@@ -211,7 +211,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 5px solid #F8A2A8; }
+    border: 5px solid #F8A2A8;
+    border-radius: 10px 10px 10px 10px; }
     .projects img:hover {
       opacity: 0.6;
       transition: all 0.5s ease-out; }
@@ -301,7 +302,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/spritsheetSMALL.png"); }
+      background: url("../img/spritsheetSMALL.png");
+      height: 40vh; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 2fr;
