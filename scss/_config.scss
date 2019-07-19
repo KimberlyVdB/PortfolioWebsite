@@ -11,7 +11,6 @@ $background-opacity: 0.6;
 }
 
 @mixin  background {
-  @if $show-home-image {
     &#bg-image {
       background: $home-image;
       background-attachment: fixed;
@@ -27,7 +26,6 @@ $background-opacity: 0.6;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
-    }
   }
 }
 
