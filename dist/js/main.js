@@ -56,9 +56,6 @@ function animateScript() {
     else {
       position = 256;
     }
-    // if (window.matchMedia('(min-width: 700px)').matches) {
-    //   stop.animateScript;
-    // }
 
   }, interval);
 }
