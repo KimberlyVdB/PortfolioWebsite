@@ -20,19 +20,13 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 400;
-    
+
   &.lg-heading {
-    font-size: 4rem; 
+    font-size: 4rem;
   }
 
   &.sm-heading {
     margin-bottom: 0.5rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
-  }
-
-  &.silly-quote {
-    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -61,7 +55,7 @@ main {
     margin-top: 1rem;
 
     a {
-      
+
       padding: 0.5rem;
 
       &:hover {
@@ -69,7 +63,7 @@ main {
         @include easeOut();
       }
     }
-  } 
+  }
 
   &#home{
     overflow: hidden;
@@ -86,7 +80,7 @@ main {
   display: grid;
   grid-gap: 50px;
    margin: 20px 0 0 0;
-   grid-template-areas: 
+   grid-template-areas:
   'bioimage bio bio'
   'job1 job2 job3';
   grid-auto-columns: repeat (3, 1fr);
@@ -95,7 +89,7 @@ main {
     grid-area: bioimage;
     margin: auto;
   }
-    
+
   .bio {
     grid-area: bio;
 
@@ -118,7 +112,7 @@ main {
       text-transform: uppercase;
       border: 5px $secondary-color solid;
     }
-    
+
     .job-1 {
       grid-area: job1;
     }
@@ -128,7 +122,7 @@ main {
     .job-3 {
       grid-area: job3;
     }
-    
+
     .job {
       background: lighten($primary-color, 5);
       padding: 0.3rem;
@@ -138,8 +132,8 @@ main {
       p {
         margin: 0 25px 15px 25px;
       }
-        
-     h5 {  
+
+     h5 {
       margin: 10px 25px 10px 20px;
     }
   }
@@ -201,7 +195,7 @@ main {
 }
 
 .btn-dark {
-  @extend .btn;   
+  @extend .btn;
   background: $secondary-color;
   color: $primary-color;
   border-bottom: 3px $primary-color solid;
@@ -219,12 +213,12 @@ main {
   background: $primary-color;
   color: $third-color;
   border-top: 3px $secondary-color solid;
-  border-radius: 20px 0 0 0; 
+  border-radius: 20px 0 0 0;
 
   &:hover {
     background: darken($third-color, 10);
     color: $primary-color;
-    border-top: 3px $primary-color solid; 
+    border-top: 3px $primary-color solid;
   }
 }
 
