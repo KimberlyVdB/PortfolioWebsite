@@ -10,15 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "live-server": "^1.2.0",
-    "node-sass": "^4.12.0",
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "sass": "^1.49.9",
     "path": "^0.12.7"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^5.1.0"
   }
 }

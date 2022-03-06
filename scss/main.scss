@@ -19,16 +19,15 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 
   &.lg-heading {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   &.sm-heading {
     margin-bottom: 0.5rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -53,7 +52,11 @@ main {
 
   .icons {
     margin-top: 1rem;
+    display: flex;
 
+    .iconOne {
+      padding-right: 10px;
+    }
     a {
 
       padding: 0.5rem;
@@ -79,11 +82,11 @@ main {
 .about-info {
   display: grid;
   grid-gap: 50px;
-   margin: 20px 0 0 0;
+   margin: 25px 0 0 0;
    grid-template-areas:
   'bioimage bio bio'
   'job1 job2 job3';
-  grid-auto-columns: repeat (3, 1fr);
+  grid-auto-columns: 1fr 1fr 1fr;
 
   .bio-image {
     grid-area: bioimage;
@@ -93,24 +96,29 @@ main {
   .bio {
     grid-area: bio;
 
+    .icon {
+      color: $secondary-color;
+      margin-top: 30px;
+    }
+
     .codingIcons {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      border-bottom: 8px $secondary-color solid;
-      border-radius: 0 0 40px 10px;
-      padding: 1rem 0 1rem 0;
+      justify-content: space-between;
+      // border-bottom: 8px $secondary-color solid;
+      // border-radius: 0 0 40px 10px;
+      // padding: 1rem 0 1rem 0;
 
       }
     }
   }
 
     .jobTitles {
-      background-color: $secondary-color;
-      color: $primary-color;
+      // background-color: $secondary-color;
+      color: $third-color;
       font-weight: 600;
       text-transform: uppercase;
-      border: 5px $secondary-color solid;
+      // border: 5px $secondary-color solid;
     }
 
     .job-1 {
@@ -124,17 +132,11 @@ main {
     }
 
     .job {
-      background: lighten($primary-color, 5);
       padding: 0.3rem;
-      border-bottom: $secondary-color 8px solid;
-      border-radius: 0px 0px 40px 10px;
-
-      p {
-        margin: 0 25px 15px 25px;
-      }
 
      h5 {
-      margin: 10px 25px 10px 20px;
+      margin: 5px 25px 5px 0px;
+      font-size: 1rem;
     }
   }
 
@@ -149,8 +151,8 @@ main {
 
   img {
     width: 100%;
-    border: 5px solid $secondary-color;
-    border-radius: 10px 10px 10px 10px;
+    // border: 5px solid $secondary-color;
+    // border-radius: 10px 10px 10px 10px;
 
     &:hover {
       opacity: 0.6;
@@ -170,18 +172,18 @@ main {
 
   div {
     font-size: 2rem;
-    border-bottom: 10px $secondary-color solid;
-    border-radius: 0 0 30px 5px;
+    // border-bottom: 10px $secondary-color solid;
+    // border-radius: 0 0 30px 5px;
     padding: 1rem 2rem;
     margin-bottom: 3rem;
     margin-top: 150px;
-    background: $primary-color;
-    @include easeOut;
+    // background: $primary-color;
+    // @include easeOut;
 
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: lighten($primary-color, 5);
-    }
+    // &:hover {
+    //   padding: 0.5rem 1.5rem;
+    //   background: lighten($primary-color, 5);
+    // }
   }
 }
 
@@ -198,28 +200,28 @@ main {
   @extend .btn;
   background: $secondary-color;
   color: $primary-color;
-  border-bottom: 3px $primary-color solid;
-  border-radius: 0 0 20px 0;
+  // border-bottom: 3px $primary-color solid;
+  // border-radius: 0 0 20px 0;
 
-  &:hover {
-    background: $third-color;
-    color: $primary-color;
-    border-bottom: 3px $primary-color solid;
-  }
+  // &:hover {
+  //   background: $third-color;
+  //   color: $third-color;
+  //   border-bottom: 3px $primary-color solid;
+  // }
 }
 
 .btn-light {
   @extend .btn;
   background: $primary-color;
   color: $third-color;
-  border-top: 3px $secondary-color solid;
-  border-radius: 20px 0 0 0;
+  // border-top: 3px $secondary-color solid;
+  // border-radius: 20px 0 0 0;
 
-  &:hover {
-    background: darken($third-color, 10);
-    color: $primary-color;
-    border-top: 3px $primary-color solid;
-  }
+  // &:hover {
+  //   background: darken($third-color, 10);
+  //   color: $primary-color;
+  //   border-top: 3px $primary-color solid;
+  // }
 }
 
 #main-footer {
