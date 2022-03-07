@@ -53,6 +53,7 @@ main {
   .icons {
     margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
 
     .iconOne {
       padding-right: 10px;
@@ -74,6 +75,23 @@ main {
     h1{
       margin-top: 20vh;
       }
+  }
+}
+
+//Menu homepage
+.nav-link-home {
+  display: inline-block;
+  position: relative;
+  font-size:35px;
+  text-transform: uppercase;
+  padding: 2rem;
+  line-height: 25px;
+  font-weight: 500;
+  @include easeOut;
+
+  &:hover {
+    // background: $secondary-color;
+    color: $primary-color;
   }
 }
 

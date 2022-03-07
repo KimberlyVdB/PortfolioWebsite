@@ -179,6 +179,7 @@ main {
 main .icons {
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
 }
 main .icons .iconOne {
   padding-right: 10px;
@@ -195,6 +196,20 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+}
+
+.nav-link-home {
+  display: inline-block;
+  position: relative;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 2rem;
+  line-height: 25px;
+  font-weight: 500;
+  transition: all 0.5s ease-out;
+}
+.nav-link-home:hover {
+  color: #598591;
 }
 
 .about-info {
@@ -319,7 +334,12 @@ main#home h1 {
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+    padding-top: 40px;
     font-size: 3rem;
+  }
+
+  .icons {
+    justify-content: center;
   }
 
   ul.menu-nav,
@@ -354,6 +374,11 @@ div.menu-branding.show {
   }
 }
 @media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+    min-height: calc(100vh - 55px);
+  }
+
   main#home h1 {
     margin-top: 10vh;
     font-size: 1.8rem;
@@ -369,5 +394,19 @@ div.menu-branding.show {
   }
   .boxes div h2 {
     font-size: 1.2rem;
+  }
+
+  .nav-link-home {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 2rem;
+    line-height: 25px;
+    font-weight: 500;
+    transition: all 0.5s ease-out;
+  }
+  .nav-link-home:hover {
+    color: #598591;
   }
 }
